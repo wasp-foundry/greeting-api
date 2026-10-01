@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-alpha
+  description: "Acceptance test app"
+  annotations:
+    github.com/project-slug: wasp-foundry/hello-alpha
+    backstage.io/kubernetes-id: hello-alpha
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/team-alpha"
