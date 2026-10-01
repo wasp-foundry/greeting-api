@@ -9,7 +9,7 @@ app = FastAPI(title=APP_NAME)
 
 @app.get("/")
 def root() -> dict[str, str]:
-    return {"app": APP_NAME, "message": "hello"}
+    return {"app": APP_NAME, "message": "hello again"}
 
 
 @app.get("/healthz")

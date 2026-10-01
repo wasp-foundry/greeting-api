@@ -24,7 +24,7 @@ def test_root_returns_app_name_from_environment(monkeypatch):
     client = client_with_name(monkeypatch, "hello-alpha")
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"app": "hello-alpha", "message": "hello"}
+    assert response.json() == {"app": "hello-alpha", "message": "hello again"}
 
 
 def test_root_falls_back_to_default_name(monkeypatch):
