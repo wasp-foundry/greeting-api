@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: hello-alpha
-  description: "Acceptance test app"
+  name: greeting-api
+  description: "Greets callers, stores each greeting and publishes a greeting event"
   annotations:
-    github.com/project-slug: wasp-foundry/hello-alpha
+    github.com/project-slug: wasp-foundry/greeting-api
     backstage.io/techdocs-ref: dir:.
-    backstage.io/kubernetes-id: hello-alpha
+    backstage.io/kubernetes-id: greeting-api
 spec:
   type: service
   lifecycle: experimental
