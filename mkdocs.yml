@@ -1,5 +1,5 @@
-site_name: hello-alpha
-site_description: hello-alpha service docs, published in Backstage TechDocs
+site_name: greeting-api
+site_description: greeting-api service docs, published in Backstage TechDocs
 nav:
   - Overview: index.md
   - Runbook: runbook.md

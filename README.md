@@ -1,13 +1,13 @@
-# hello-alpha
+# greeting-api
 
-Acceptance test app
+Greets callers, stores each greeting and publishes a greeting event
 
 FastAPI service created from the wasp-idp Backstage template `python-service`.
 
 - `GET /` — app name and a greeting
 - `GET /healthz` — liveness/readiness
 
-Every push to `main` runs the tests, publishes `ghcr.io/wasp-foundry/hello-alpha:<sha>` and bumps the tag in [`wasp-foundry/gitops`](https://github.com/wasp-foundry/gitops/tree/main/apps/hello-alpha), which ArgoCD deploys.
+Every push to `main` runs the tests, publishes `ghcr.io/wasp-foundry/greeting-api:<sha>` and bumps the tag in [`wasp-foundry/gitops`](https://github.com/wasp-foundry/gitops/tree/main/apps/greeting-api), which ArgoCD deploys.
 
 ## Local run
 
