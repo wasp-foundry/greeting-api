@@ -5,10 +5,12 @@ metadata:
   description: "Acceptance test app"
   annotations:
     github.com/project-slug: wasp-foundry/hello-alpha
+    backstage.io/techdocs-ref: dir:.
     backstage.io/kubernetes-id: hello-alpha
 spec:
   type: service
   lifecycle: experimental
+  system: greeter
   owner: "group:default/team-alpha"
   dependsOn:
     - resource:default/development
